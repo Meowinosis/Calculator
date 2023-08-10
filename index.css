@@ -1,0 +1,26 @@
+div.result{
+    height: 72px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin: auto;
+    padding: 10px 14px 0 10px;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    background: #f1f3f4;
+    color: #202124;
+    border: 1px solid #f1f3f4;
+    border-radius: 4px;
+    width: 83px;
+    height: 34px;
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+button.operator{
+    background: #dadce0;
+}
+button.cal{
+    background: #4285f4;
+}

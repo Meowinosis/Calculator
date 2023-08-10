@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Rep 1:1</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+</head>
+
+<body>
+    <div style="width: min-content;">
+        <div class="result" id="board">
+
+        </div>
+        <table>
+            <tr>
+                <!-- <td><button onclick="concatString(event)" class="operator" value="">Rad</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="">Deg</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="">x!</button></td> -->
+                <td><button onclick="concatString(event)" class="operator" value="(">(</button></td>
+                <td><button onclick="concatString(event)" class="operator" value=")">)</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="/100">%</button></td>
+                <td><button onclick="allClear()" class="operator" value="AC">AC</button></td>
+            </tr>
+            <tr>
+                <!-- <td><button onclick="concatString(event)" class="operator" value="">Inv</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="">sin</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="">ln</button></td> -->
+                <td><button onclick="concatString(event)" value="7">7</button></td>
+                <td><button onclick="concatString(event)" value="8">8</button></td>
+                <td><button onclick="concatString(event)" value="9">9</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="/">÷</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="concatString(event)" value="4">4</button></td>
+                <td><button onclick="concatString(event)" value="5">5</button></td>
+                <td><button onclick="concatString(event)" value="6">6</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="*">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="concatString(event)" value="1">1</button></td>
+                <td><button onclick="concatString(event)" value="2">2</button></td>
+                <td><button onclick="concatString(event)" value="3">3</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="concatString(event)" value="0">0</button></td>
+                <td><button onclick="concatString(event)" value=".">.</button></td>
+                <td><button onclick="calcucate()" class="cal" value="=">=</button></td>
+                <td><button onclick="concatString(event)" aria-label="plus" class="operator" value="+">+</button></td>
+            </tr>
+        </table>
+    </div>
+<script src="./index.js"></script>
+</body>
+
+</html>
