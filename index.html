@@ -10,45 +10,60 @@
 </head>
 
 <body>
-    <div style="width: min-content;">
-        <div class="result" id="board">
-
-        </div>
+    <div style="width: min-content;" >
+        <div class="result" id="board" style="font-size: 30px;">0</div>
         <table>
             <tr>
-                <!-- <td><button onclick="concatString(event)" class="operator" value="">Rad</button></td>
-                <td><button onclick="concatString(event)" class="operator" value="">Deg</button></td>
-                <td><button onclick="concatString(event)" class="operator" value="">x!</button></td> -->
+                <td><button onclick="" class="operator" value="">Rad</button></td>
+                <td><button onclick="" class="operator" value="">Deg</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="!">x!</button></td>
                 <td><button onclick="concatString(event)" class="operator" value="(">(</button></td>
                 <td><button onclick="concatString(event)" class="operator" value=")">)</button></td>
                 <td><button onclick="concatString(event)" class="operator" value="/100">%</button></td>
                 <td><button onclick="allClear()" class="operator" value="AC">AC</button></td>
             </tr>
             <tr>
-                <!-- <td><button onclick="concatString(event)" class="operator" value="">Inv</button></td>
-                <td><button onclick="concatString(event)" class="operator" value="">sin</button></td>
-                <td><button onclick="concatString(event)" class="operator" value="">ln</button></td> -->
+                <td><button onclick="invert()" class="operator" value="">Inv</button></td>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="sin">sin</button></td>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="lng">ln</button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="asi">sin<sup>-1</sup></button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="epow">e<sup>x</sup></button></td>
                 <td><button onclick="concatString(event)" value="7">7</button></td>
                 <td><button onclick="concatString(event)" value="8">8</button></td>
                 <td><button onclick="concatString(event)" value="9">9</button></td>
                 <td><button onclick="concatString(event)" class="operator" value="/">÷</button></td>
             </tr>
             <tr>
+                <td><button onclick="concatString(event)" class="operator" value="π">π</button></td>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="cos">cos</button></td>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="log">log</button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="aco">cos<sup>-1</sup></button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="tepo">10<sup>x</sup></button></td>
                 <td><button onclick="concatString(event)" value="4">4</button></td>
                 <td><button onclick="concatString(event)" value="5">5</button></td>
                 <td><button onclick="concatString(event)" value="6">6</button></td>
-                <td><button onclick="concatString(event)" class="operator" value="*">x</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="*">×</button></td>
             </tr>
             <tr>
+                <td><button onclick="concatString(event)" class="operator" value="e">e</button></td>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="tan">tan</button></td>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="sqr">√</button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="ata">tan<sup>-1</sup></button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="pow2">x<sup>2</sup></button></td>
                 <td><button onclick="concatString(event)" value="1">1</button></td>
                 <td><button onclick="concatString(event)" value="2">2</button></td>
                 <td><button onclick="concatString(event)" value="3">3</button></td>
-                <td><button onclick="concatString(event)" class="operator" value="-">-</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="-">−</button></td>
             </tr>
             <tr>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="A">Ans</button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="Rnd">Rnd</button></td>
+                <td><button onclick="concatString(event)" class="operator" value="exp">EXP</button></td>
+                <td class="default"><button onclick="concatString(event)" class="operator" value="xpow">x<sup>y</sup></button></td>
+                <td class="invert" style="display: none;"><button onclick="concatString(event)" class="operator" value="sqry"><sup>y</sup>√x</button></td>
                 <td><button onclick="concatString(event)" value="0">0</button></td>
                 <td><button onclick="concatString(event)" value=".">.</button></td>
-                <td><button onclick="calcucate()" class="cal" value="=">=</button></td>
+                <td><button onclick="calculate()" class="cal" value="=">=</button></td>
                 <td><button onclick="concatString(event)" aria-label="plus" class="operator" value="+">+</button></td>
             </tr>
         </table>
