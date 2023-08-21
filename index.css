@@ -5,6 +5,7 @@ div.result{
     margin: auto;
     padding: 10px 14px 0 10px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 button{
     cursor: pointer;
